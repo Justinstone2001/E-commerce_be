@@ -26,7 +26,13 @@ ProductTag.init(
       },
     },
   },
-  
+  {
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'product_tag',
+  },
 );
 
 module.exports = ProductTag;
